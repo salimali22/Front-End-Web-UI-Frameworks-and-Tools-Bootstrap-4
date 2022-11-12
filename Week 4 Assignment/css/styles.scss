@@ -1,0 +1,22 @@
+$top : #523DA8 ;
+$body : #c5aaf3 ;
+$tcolor : floralwhite ;
+
+@mixin border_value{
+    border: none;
+}
+.modal-header{
+    background-color: $top;
+    color: $tcolor;
+    button .span{
+        color: $tcolor;
+    }
+    @include border_value;
+
+}
+.modal-body,
+.modal-footer
+{
+    background-color: $body;
+    @include border_value;
+}
